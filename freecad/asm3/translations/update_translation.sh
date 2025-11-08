@@ -116,9 +116,11 @@ help() {
 # Main function ------------------------------------------------------------------------------------
 
 LUPDATE=/usr/lib/qt6/bin/lupdate # from Qt6
-# LUPDATE=lupdate                  # from Qt5
 LRELEASE=/usr/lib/qt6/bin/lrelease # from Qt6
-# LRELEASE=lrelease                 # from Qt5
+if ! test -f $LUPDATE; then
+    LUPDATE=lupdate                  # from Qt5
+    LRELEASE=lrelease                 # from Qt5
+fi
 WB="asm3"
 
 sed -i '3s/-/_/' ${WB}*.ts               # Enforce underscore on locales
