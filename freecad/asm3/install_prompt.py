@@ -134,4 +134,4 @@ SolveSpace (<a href="https://pypi.org/project/py-slvs/">py-slvs</a>)?
     except ImportError:
         QMessageBox.critical(FreeCADGui.getMainWindow(),
                                 translate('asm3', 'Failed'),
-                                translate('asm3', 'Failed to install py-slvs'))
+                                translate('asm3', 'Failed to import py-slvs.\nRestarting FreeCAD may solve the problem.'))

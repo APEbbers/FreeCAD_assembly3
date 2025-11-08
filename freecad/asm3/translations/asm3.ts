@@ -244,7 +244,8 @@ SolveSpace (&lt;a href=&quot;https://pypi.org/project/py-slvs/&quot;&gt;py-slvs&
     </message>
     <message>
         <location filename="../install_prompt.py" line="137"/>
-        <source>Failed to install py-slvs</source>
+        <source>Failed to import py-slvs.
+Restarting FreeCAD may solve the problem.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
